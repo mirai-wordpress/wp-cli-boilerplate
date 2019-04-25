@@ -10,8 +10,14 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
 			$this->db = $GLOBALS['wpdb'];
 		}
 
+				
 		/* Custom functions here */
-		echo "Your code functions goes here";
+
+		public function test_command() {
+
+			echo "Command ok";
+
+		}
 	}
 
 	WP_CLI::add_command( 'command_name', 'class_name' );
